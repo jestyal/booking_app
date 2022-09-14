@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import '/screens/home_screen.dart';
-import '/constants/colors.dart';
+import '/utils/app_styles.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -29,9 +29,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Tickets"),
-      ),
       body: Center(child: _widgetOptions[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
@@ -39,8 +36,8 @@ class _BottomBarState extends State<BottomBar> {
         elevation: 10,
         showUnselectedLabels: false,
         showSelectedLabels: false,
-        selectedItemColor: iconColor,
-        unselectedItemColor: iconColor,
+        selectedItemColor: Styles.iconColor,
+        unselectedItemColor: Styles.iconColor,
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
