@@ -8,6 +8,7 @@ class Styles{
   static Color textColorGrey = Colors.grey.shade500;
   static Color bgColor = const Color(0xFFeeedf2);
   static Color blueColor = const Color(0xFF526799);
+  static Color orangeColor = const Color(0xFFF37B67);
 
   static Color whiteColor = const Color(0xFFFFFFFF);
   static Color iconColor = const Color(0xFF526480);
